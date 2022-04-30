@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Conditional Profile Card Generator</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
@@ -16,26 +16,25 @@
   <body>
     <ul class="filters">
       <li>
-        <label>Include Cover</label>
+        <label>Incluir Portada</label>
         <select class="picker" for="includeCover">
-          <option value="">Include Cover</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
+          <option value="true">Portada</option>
+          <option value="false">Sin Portada</option>
         </select>
       </li>
       <li>
-        <label>Name</label>
+        <label>Nombre</label>
         <input class="picker" for="name" type="text" />
       </li>
       <li>
-        <label>Last Name</label>
+        <label>Apellido</label>
         <input class="picker" for="lastname" type="text" />
       </li>
       <li>
         <label>S.M. Position</label>
         <select class="picker" for="socialMediaPosition">
-          <option value="position-left">Left</option>
-          <option value="position-right">Right</option>
+          <option value="position-left">Izquierda</option>
+          <option value="position-right">Derecha</option>
         </select>
       </li>
       <li>
@@ -55,18 +54,18 @@
         <input class="picker" for="instagram" type="text" />
       </li>
       <li>
-        <label>Role</label>
+        <label>Rol</label>
         <select class="picker" for="role">
-          <option value="">null</option>
+          <option value="">Rol</option>
           <option value="Web Developer">Web Developer</option>
           <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
+          <option value="Technical Writer">Technical Writer</option>
         </select>
       </li>
       <li>
-        <label>City</label>
+        <label>Ciudad</label>
         <select class="picker" for="city">
-          <option value="">null</option>
+          <option value="Ciudad"></option>
           <option value="Miami">Miami</option>
           <option value="Munich">Munich</option>
           <option value="Caracas">Caracas</option>
@@ -74,9 +73,9 @@
         </select>
       </li>
       <li>
-        <label>Country</label>
+        <label>País</label>
         <select class="picker" for="country">
-          <option value="">null</option>
+          <option value="">País</option>
           <option value="USA">USA</option>
           <option value="Germany">Germany</option>
           <option value="Canada">Canada</option>
@@ -87,6 +86,6 @@
     <div id="widget_content"></div>
 
     <!-- do not remove this bundle.js tag -->
-    <script type="text/javascript" src="/main.bundle.js"></script>
+    <script type="text/javascript" src="./bundle.js"></script>
   </body>
 </html>
